@@ -1,7 +1,9 @@
-echo "# store" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/anhtamsjc/store.git
-git push -u origin main
+$ pkg update 
+$ pkg upgrade -y
+$ pkg install root-repo -y
+$ pip install pycryptodome
+$ pkg install git tsu python wpa-supplicant pixiewps iw openssl -y
+$ git clone https://github.com/anhtamsjc/store.git
+$ cd store
+$ chmod +x store.py
+$ sudo python store.py -i wlan0 -K
